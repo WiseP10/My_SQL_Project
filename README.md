@@ -97,7 +97,7 @@ FROM
     JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
     JOIN skills_dim on skills_job_dim.skill_id = skills_dim.skill_id
 WHERE 
-    job_title_short = 'Business Analyst' AND
+    job_title_short = 'Data Analyst' AND
     job_work_from_home = TRUE
 GROUP BY skills
 order by 
@@ -143,7 +143,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 ### What are the most optimal skill to learn?
 - Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
 
-```
+```sql
 SELECT
     skills_dim.skill_id,
     skills_dim.skills,
@@ -187,3 +187,5 @@ From the analysis, several general insights emerged:
 5. Optimal Skills for Job Market Value: SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for data analysts to learn to maximize their market value.
 ### Closing Thoughts
 This project enhanced my SQL skills and provided valuable insights into the data analyst job market. The findings from the analysis serve as a guide to prioritizing skill development and job search efforts. Aspiring data analysts can better position themselves in a competitive job market by focusing on high-demand, high-salary skills. This exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics.
+
+[def]: asset\Top_paying_role.png
