@@ -131,7 +131,7 @@ order by
 
 limit 10
 ```
-! [average top pay skill](asset/skill_value.png)
+! [average top play skill].(asset/skill_value.png)
 *Table of the average salary for the top 10 paying skills for data analysts
 
 Here's a breakdown of the results for top paying skills for Data Analysts:
